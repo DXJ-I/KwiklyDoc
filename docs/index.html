@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KwiklyDoc: bank statements to checked transactions</title>
+<meta name="description" content="Turn bank statement PDFs into transactions for your accounting or budgeting app, checked against the printed balances. Private by default, on iPhone and iPad.">
+<meta name="theme-color" content="#0a3142">
+<meta property="og:title" content="KwiklyDoc: bank statements to checked transactions">
+<meta property="og:description" content="Turn bank statement PDFs into transactions for your accounting or budgeting app, checked against the printed balances. Private by default, on iPhone and iPad.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/icon-512.png">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<!-- After launch, uncomment and set your App Store ID to show Safari's app banner:
+<meta name="apple-itunes-app" content="app-id=APP_STORE_ID"> -->
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="assets/icon-512.png" alt="" width="36" height="36">KwiklyDoc</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Bank statements in. Checked transactions out.</h1>
+      <p class="lede">KwiklyDoc reads your statement PDFs and exports clean transactions for your accounting or budgeting app, then proves every figure against the balances your bank printed.</p>
+      <div class="cta-row">
+        <a class="button" href="APP_STORE_URL"><img src="assets/icon-512.png" alt="" width="22" height="22">Get KwiklyDoc on the App Store</a>
+        <span class="small">Free for iPhone and iPad. iOS 17 or later.</span>
+      </div>
+    </div>
+
+    <div class="transform" role="img" aria-label="A printed statement with unsigned paid-in and paid-out columns becomes five transactions with signed amounts. Opening balance £500.00 plus the transactions equals the closing balance of £1,937.70, so the statement is reconciled to the penny.">
+      <div class="statement" aria-hidden="true">
+        <div class="bank">Current account statement, March 2026</div>
+<pre>Date        Description         Out        In   Balance
+            Opening balance                      500.00
+02/03/2026  TESCO STORES      12.30              487.70
+03/03/2026  ACME LTD                 1,500.00  1,987.70
+05/03/2026  UBER BV           12.84            1,974.86
+07/03/2026  NETFLIX            9.99            1,964.87
+09/03/2026  J SMITH           27.17            1,937.70</pre>
+      </div>
+      <div class="arrow" aria-hidden="true"><svg viewBox="0 0 18 18"><path d="M9 2v13M3.5 9.5L9 15l5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Read on your iPhone</div>
+      <div class="ledger" aria-hidden="true">
+        <table>
+          <thead><tr><th>Date</th><th>Payee</th><th class="num">Amount</th><th class="num">Balance</th></tr></thead>
+          <tbody>
+            <tr><td>2 Mar</td><td>Tesco Stores</td><td class="num">−£12.30</td><td class="num">£487.70</td></tr>
+            <tr><td>3 Mar</td><td>Acme Ltd</td><td class="num in">+£1,500.00</td><td class="num">£1,987.70</td></tr>
+            <tr><td>5 Mar</td><td>Uber BV</td><td class="num">−£12.84</td><td class="num">£1,974.86</td></tr>
+            <tr><td>7 Mar</td><td>Netflix</td><td class="num">−£9.99</td><td class="num">£1,964.87</td></tr>
+            <tr><td>9 Mar</td><td>J Smith</td><td class="num">−£27.17</td><td class="num">£1,937.70</td></tr>
+            <tr class="total"><td colspan="3">Closing balance</td><td class="num">£1,937.70</td></tr>
+          </tbody>
+        </table>
+        <div class="stamp"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="currentColor"/><path d="M6 10.4l2.6 2.6L14.2 7.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Reconciled to the penny</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="how">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>How it checks your figures</h2>
+      <p>Most converters guess which way money moved. KwiklyDoc works it out from the balances on the page, and tells you when it can’t.</p>
+    </div>
+    <ol class="steps">
+      <li><h3>Import</h3><p>Choose PDFs or a whole folder from Files, Mail or the Share Sheet. Scanned pages are read with on-device text recognition.</p></li>
+      <li><h3>Read</h3><p>Dates and amounts are read exactly, never rounded. Pending and reverted payments are left out.</p></li>
+      <li><h3>Reconcile</h3><p>Opening balance plus every transaction must equal the closing balance. Anything that can’t be proven is flagged, not guessed.</p></li>
+      <li><h3>Export</h3><p>Review flagged rows, then export CSV, QIF, OFX, QFX, QBO or a PDF report.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section" id="privacy">
+  <div class="wrap split">
+    <div>
+      <h2>Your statements stay yours</h2>
+      <p>There’s no account to create and no KwiklyDoc server. Text extraction and the built-in parser run on your iPhone or iPad, and files are stored with iOS Data Protection and left out of backups.</p>
+      <p>AI help is optional, and KwiklyDoc asks before any statement text leaves your device.</p>
+      <p><a href="privacy.html">Read the privacy policy</a></p>
+    </div>
+    <ul class="modes">
+      <li><strong>Built-in parser</strong><span>On your device. Handles most online-banking PDFs on its own.</span></li>
+      <li><strong>Apple Intelligence on your device</strong><span>For unusual layouts, on devices that support Apple Intelligence. Nothing is uploaded.</span></li>
+      <li><strong>Apple Intelligence on Private Cloud Compute</strong><span>Apple’s larger model for long statements, on iOS 27. Apple doesn’t store the text.</span></li>
+      <li><strong>Your own AI provider</strong><span>OpenAI, Google Gemini or Anthropic with your own API key, kept in the iOS Keychain.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="formats">
+  <div class="wrap split">
+    <div>
+      <h2>Brings statements in</h2>
+      <ul class="formats" aria-label="Import formats">
+        <li>PDF</li><li>Word</li><li>CSV</li><li>TSV</li><li>OFX</li><li>QFX</li><li>QBO</li><li>QIF</li>
+      </ul>
+      <p class="small">Tuned for UK, EU and US statement layouts, including app-based banks that print one column per line.</p>
+    </div>
+    <div>
+      <h2>Sends transactions out</h2>
+      <ul class="formats" aria-label="Export formats">
+        <li>CSV for Excel and Numbers</li><li>OFX</li><li>QFX</li><li>QBO</li><li>QIF</li><li>PDF report</li>
+      </ul>
+      <p class="small">Formats used by most accounting and budgeting apps. Every row keeps its ID and running balance.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section closing">
+  <div class="wrap">
+    <h2>Try it with a sample statement</h2>
+    <p>Open KwiklyDoc and tap “Explore a sample statement” to see the review and export flow with made-up data before you import your own.</p>
+    <div class="cta-row">
+      <a class="button" href="APP_STORE_URL"><img src="assets/icon-512.png" alt="" width="22" height="22">Get KwiklyDoc on the App Store</a>
+      <a href="support.html">Questions? Visit support</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 KwiklyDoc. Helps with data entry; not financial advice.</span>
+    <nav aria-label="Footer">
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy policy</a>
+      <a href="mailto:SUPPORT_EMAIL">Contact</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

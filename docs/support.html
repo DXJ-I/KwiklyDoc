@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KwiklyDoc support</title>
+<meta name="description" content="Help with importing bank statements, reviewing flagged rows and exporting transactions in KwiklyDoc.">
+<meta name="theme-color" content="#0a3142">
+<meta property="og:title" content="KwiklyDoc support">
+<meta property="og:description" content="Help with importing bank statements, reviewing flagged rows and exporting transactions in KwiklyDoc.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/icon-512.png">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<!-- After launch, uncomment and set your App Store ID to show Safari's app banner:
+<meta name="apple-itunes-app" content="app-id=APP_STORE_ID"> -->
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="assets/icon-512.png" alt="" width="36" height="36">KwiklyDoc</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="support.html" aria-current="page">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <div class="wrap">
+    <h1>Support</h1>
+    <p class="lede">Help with importing statements, checking flagged rows and exporting to your accounting app.</p>
+    <div class="contact">
+      <p><strong>Email <a href="mailto:SUPPORT_EMAIL?subject=KwiklyDoc%20support">SUPPORT_EMAIL</a></strong></p>
+      <p class="small">Tell us your iPhone or iPad model, iOS version and which bank the statement came from. Please don’t send real statements; describe the layout or send a copy with names and account numbers changed.</p>
+    </div>
+
+    <h2>Getting started</h2>
+    <ol>
+      <li>Tap “Explore a sample statement” to try the app with made-up data.</li>
+      <li>Tap + and choose statement files, or a folder to import them all.</li>
+      <li>Check any flagged rows, open Verification to see the balance check, then export.</li>
+    </ol>
+
+    <h2>Common questions</h2>
+    <details><summary>Which banks does KwiklyDoc work with?</summary><div><p>Any bank that gives you a PDF, Word, CSV or OFX/QIF statement. The parser is tuned for UK, EU and US layouts, including app-based banks such as those that print one table cell per line and keep pending payments in a separate section.</p></div></details>
+    <details><summary>What does “Reconciled to the penny” mean?</summary><div><p>The opening balance plus every transaction equals the closing balance printed on the statement, and no row is left unresolved. It’s the strongest check KwiklyDoc can make.</p></div></details>
+    <details><summary>Why is a row marked “Needs review”?</summary><div><p>KwiklyDoc couldn’t prove its amount, date or direction from the statement, often because the PDF prints no running balance. Open the row, compare it with your statement and correct it if needed. Edits can be undone and are logged in the audit trail on your device.</p></div></details>
+    <details><summary>Does my statement leave my phone?</summary><div><p>Not by default. Statement text is sent only if you choose an AI option in Settings → Conversion and allow it for that service. You can withdraw permission in Settings → Privacy. See the <a href="privacy.html">privacy policy</a>.</p></div></details>
+    <details><summary>What is Private Cloud Compute?</summary><div><p>On iOS 27 and later, Apple Intelligence can run Apple’s larger model on Apple’s servers for long or complex statements. Apple uses the text only for your request and doesn’t store it. It needs an internet connection and uses your daily Apple Intelligence allowance, which iCloud+ increases. When it’s unavailable or the limit is reached, KwiklyDoc uses the on-device model and shows the status on the home screen.</p></div></details>
+    <details><summary>Which export should I choose?</summary><div><p>Most accounting and budgeting apps import OFX, QFX or QBO. Spreadsheets use CSV, which opens correctly in Excel and Numbers. Quicken also accepts QIF.</p></div></details>
+    <details><summary>My PDF is password-protected</summary><div><p>Open it in Files or Preview, save a copy without the password (or print it to PDF), then import that copy.</p></div></details>
+    <details><summary>How do I remove my data?</summary><div><p>Settings → History &amp; storage lets you clear history and the audit trail, or erase everything KwiklyDoc stores, optionally including API keys. Deleting the app also removes it all.</p></div></details>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 KwiklyDoc. Helps with data entry; not financial advice.</span>
+    <nav aria-label="Footer">
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy policy</a>
+      <a href="mailto:SUPPORT_EMAIL">Contact</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
